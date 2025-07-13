@@ -1,0 +1,204 @@
+<link rel="stylesheet" href="/css/home.css" />
+<% layout("/layouts/boilerplate.ejs") %>
+<body>
+  <div class="box">
+    <div class="innerbox">
+      <div class="content">
+        <h1>Hi!</h1>
+        <h3>Welcome to Tripzy – Your Gateway to Unique Stays and Travel Experiences.</h3>
+        <p>
+          Tripzy is a full-fledged web platform built using the MERN stack (MongoDB, Express.js, Node.js) without React. It allows users to explore, book, and list unique stays around the world. Designed with modern travel needs in mind, Tripzy focuses on simplicity, security, and seamless interactions for both hosts and guests.
+        </p>
+        <p><b>Developed by Nakul</b></p>
+      </div>
+      <div class="img">
+        <img class="hello-img" src="/uploads/img/Hello.gif" alt="" />
+      </div>
+    </div>
+  </div>
+
+  <div class="box">
+    <div class="innerbox2">
+      <h4>Key Features:</h4>
+      <ul class="outerlist">
+        <li>
+          <h5>User Authentication:</h5>
+          <ul>
+            <li>Secure session-based sign-up and login for all users.</li>
+            <li>Only registered users can list properties or leave reviews.</li>
+          </ul>
+        </li>
+        <li>
+          <h5>Dynamic Listing Management:</h5>
+          <ul>
+            <li>Users can create, edit, and delete property listings.</li>
+            <li>Each listing includes detailed info like amenities, pricing, and images.</li>
+          </ul>
+        </li>
+        <li>
+          <h5>Review System:</h5>
+          <ul>
+            <li>Verified guests can leave authentic reviews and ratings.</li>
+            <li>Owners can manage reviews on their listings.</li>
+          </ul>
+        </li>
+        <li>
+          <h5>Interactive Maps:</h5>
+          <ul>
+            <li>Mapbox integration to view listing locations on an interactive map.</li>
+            <li>Helps users find stays in their desired regions visually.</li>
+          </ul>
+        </li>
+        <li>
+          <h5>Permissions and Security:</h5>
+          <ul>
+            <li>Only listing owners can edit or remove their content.</li>
+            <li>Review deletion is restricted to the original author.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="box">
+    <div class="innerbox2">
+      <h4>Technologies Used:</h4>
+      <ul>
+        <li>Frontend: HTML, CSS, JavaScript</li>
+        <li>Backend: Node.js, Express.js</li>
+        <li>Database: MongoDB</li>
+        <li>Authentication: Passport.js</li>
+        <li>Maps: Mapbox API</li>
+        <li>Image Upload: Cloudinary API</li>
+        <li>Deployment: Render</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="box">
+    <div class="innerbox2">
+      <h4>Technical Implementation:</h4>
+      <ul class="outerlist">
+        <li>
+          <h5>RESTful API:</h5>
+          <ul>
+            <li>REST architecture used for clean and scalable endpoints.</li>
+            <li>Supports all major HTTP methods through intuitive routes.</li>
+          </ul>
+        </li>
+        <li>
+          <h5>CRUD Operations:</h5>
+          <ul>
+            <li>Listings and reviews can be created, viewed, updated, and deleted.</li>
+            <li>User interface offers a smooth experience for these operations.</li>
+          </ul>
+        </li>
+        <li>
+          <h5>Middleware:</h5>
+          <ul>
+            <li>Used for authentication checks, validation, and error handling.</li>
+            <li>Ensures secure and consistent app behavior.</li>
+          </ul>
+        </li>
+        <li>
+          <h5>Session Management:</h5>
+          <ul>
+            <li>Sessions managed via Passport.js and Express.js for secure login states.</li>
+            <li>Protected routes for authenticated users only.</li>
+          </ul>
+        </li>
+        <li>
+          <h5>Form Validation:</h5>
+          <ul>
+            <li>Validation handled by Joi to ensure input correctness and security.</li>
+          </ul>
+        </li>
+        <li>
+          <h5>File Uploads:</h5>
+          <ul>
+            <li>Multer manages file input; Cloudinary stores images safely online.</li>
+          </ul>
+        </li>
+        <li>
+          <h5>Map Integration:</h5>
+          <ul>
+            <li>Mapbox shows listings on a geographic map with clickable markers.</li>
+          </ul>
+        </li>
+        <li>
+          <h5>MVC Architecture:</h5>
+          <ul>
+            <li>Follows Model-View-Controller pattern for code structure and clarity.</li>
+          </ul>
+        </li>
+        <li>
+          <h5>Backend:</h5>
+          <ul>
+            <li>Node.js and Express.js power the backend.</li>
+            <li>MongoDB used for storing users, listings, and reviews.</li>
+          </ul>
+        </li>
+        <li>
+          <h5>Frontend:</h5>
+          <ul>
+            <li>Built with EJS templates, CSS, and vanilla JavaScript for a dynamic interface.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="box">
+    <div class="innerbox2">
+      <h4>Dependencies and Integrations:</h4>
+      <ul class="outerlist">
+        <li><h5>@mapbox/mapbox-sdk:</h5><p>Used for map functionality.</p></li>
+        <li><h5>Cloudinary:</h5><p>Handles image hosting and delivery.</p></li>
+        <li><h5>Connect-Flash:</h5><p>For session-based flash messages.</p></li>
+        <li><h5>Cookie-Parser:</h5><p>Parses cookies for session tracking.</p></li>
+        <li><h5>Dotenv:</h5><p>Loads environment variables securely.</p></li>
+        <li><h5>EJS & EJS-Mate:</h5><p>Templates for rendering pages dynamically.</p></li>
+        <li><h5>Express & Express-Session:</h5><p>Framework and session handling.</p></li>
+        <li><h5>Joi:</h5><p>Used for request validation.</p></li>
+        <li><h5>Method-Override:</h5><p>Enables PUT/DELETE in forms.</p></li>
+        <li><h5>Mongoose:</h5><p>MongoDB ODM for schema modeling.</p></li>
+        <li><h5>Multer & Multer-Storage-Cloudinary:</h5><p>Image upload and integration with Cloudinary.</p></li>
+        <li><h5>Passport, Passport-Local, Passport-Local-Mongoose:</h5><p>Used for authentication and session support.</p></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="explorebox">
+    <div class="exploreinnerbox2">
+      <h4>Explore the Code:</h4>
+      <p>
+        <a href="https://github.com/nakulKumar10010" target="_blank">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+            alt="GitHub"
+            width="24"
+            height="24"
+          />
+          GitHub Repository
+        </a>
+        - Browse the full code for Tripzy on GitHub.
+      </p>
+      <p>
+        <a href="https://www.linkedin.com/in/nakul2004" target="_blank">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+            alt="LinkedIn"
+            width="24"
+            height="24"
+          />
+          LinkedIn Profile
+        </a>
+        - Connect with me for collaboration and updates.
+      </p>
+      <p>
+        Thank you for visiting Tripzy. I hope you find its features inspiring and useful. Feel free to explore the platform and reach out for feedback or queries.
+      </p>
+    </div>
+  </div>
+</body>
+
